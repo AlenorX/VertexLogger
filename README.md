@@ -2,7 +2,8 @@
 ## VertexLogger - logger that allows you to log all actions in your project and automatically save them in a file
 ![Alt text](Images/Image.jpg)
 
-Example of using VertexLogger:
+## Example of using VertexLogger:
+
 ![Alt text](Images/Preview.jpg)
 
 All methods:
