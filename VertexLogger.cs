@@ -5,8 +5,7 @@
 
     public VertexLogger(string path)
     {
-        base.pathFile = path;
-        base.time = timeNow;
+        base(path, timeNow);
     }
 
     public void Debug(string text)
