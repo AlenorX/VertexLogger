@@ -1,6 +1,5 @@
-﻿public class DataLogger
+﻿public abstract class BaseLogger
 {
-    protected string[] level = ["DEBUG", "WARN", "ERROR"];
     protected string text;
     protected string time;
     protected string pathFile;
@@ -10,6 +9,5 @@
         this.pathFile = pathFile;
         this.time = time;
     }
-
 }
 
