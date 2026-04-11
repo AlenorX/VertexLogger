@@ -4,7 +4,7 @@
 
 ## Documentation
 
-When creating an object based on the VertexLogger.cs class, add the time and path parameters to the constructor.
+When creating an object based on the VertexLogger.cs class, add the path parameter to the constructor.
 VertexLogger contains several methods:
 1) INFO
 2) WARN
