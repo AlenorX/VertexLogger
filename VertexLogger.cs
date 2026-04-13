@@ -1,8 +1,8 @@
 ﻿namespace VertexLogger
 {
-    public class Logger : DataLogger, ILogger
+    public class Logger : BaseLogger, ILogger
     {
-        private string timeNow = $"{DateTime.Now.Day}.{DateTime.Now.Month}.{DateTime.Now.Year} - {DateTime.Now.Hour}:{DateTime.Now.Minute}";
+        private static string timeNow = $"{DateTime.Now.Day}.{DateTime.Now.Month}.{DateTime.Now.Year} - {DateTime.Now.Hour}:{DateTime.Now.Minute}";
         public Logger(string path): base(path, timeNow) {}
         public void INFO(string text)
         {

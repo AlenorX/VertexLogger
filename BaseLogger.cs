@@ -6,7 +6,7 @@
         private string path;
         public string dateNow => date;
         public string pathLog => path;
-        public DataLogger(string path, string date)
+        public BaseLogger(string path, string date)
         {
             this.path = path;
             this.date = date;
