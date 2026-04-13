@@ -1,14 +1,17 @@
-﻿public abstract class BaseLogger
+﻿namespace VertexLogger
 {
-    private string date;
-    private string path;
-    public string dateNow => date;
-    public string pathLog => path;
-
-    public DataLogger(string path, string date)
+    public abstract class BaseLogger
     {
-        this.path = path;
-        this.date = date;
+        private string date;
+        private string path;
+        public string dateNow => date;
+        public string pathLog => path;
+        public DataLogger(string path, string date)
+        {
+            this.path = path;
+            this.date = date;
+        }
     }
 }
+
 
