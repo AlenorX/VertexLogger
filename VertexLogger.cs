@@ -7,21 +7,18 @@
     }
     public void INFO(string text)
     {
-        base.text = text;
-        string result = $"{base.time} | [{base.level[0]}] - {base.text}\n";
-        File.AppendAllText(base.pathFile, result);
+        string result = $"{base.dateNow} | [INFO] - {text}\n";
+        File.AppendAllText(base.pathLog, result);
     }
     public void WARN(string text)
     {
-        base.text = text;
-        string result = $"{base.time} | [{base.level[1]}] - {base.text}\n";
-        File.AppendAllText(base.pathFile, result);
+        string result = $"{base.dateNow} | [WARN] - {text}\n";
+        File.AppendAllText(base.pathLog, result);
     }
     public void ERROR(string text)
     {
-        base.text = text;
-        string result = $"{base.time} | [{base.level[2]}] - {base.text}\n";
-        File.AppendAllText(base.pathFile, result);
+        string result = $"{base.dateNow} | [ERROR] - {text}\n";
+        File.AppendAllText(base.pathLog, result);
     }
 }
 

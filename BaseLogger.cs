@@ -1,12 +1,14 @@
 ﻿public abstract class BaseLogger
 {
-    protected string time;
-    protected string pathFile;
+    private string date;
+    private string path;
+    public string dateNow => date;
+    public string pathLog => path;
 
-    public DataLogger(string pathFile, string nowDate)
+    public DataLogger(string path, string date)
     {
-        this.pathFile = pathFile;
-        this.time = nowDate;
+        this.path = path;
+        this.date = date;
     }
 }
 
